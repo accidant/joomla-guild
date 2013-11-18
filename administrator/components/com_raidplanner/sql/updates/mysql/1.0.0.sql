@@ -1,0 +1,1 @@
+ALTER TABLE `#__raidplanner_raids` ADD raid TEXT NOT NULL DEFAULT "";

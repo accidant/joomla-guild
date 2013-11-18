@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset name="joinus-formular">
+		<field
+				name="nick"
+				type="text"
+				label="COM_JOINUS_FORMULAR_FIELD_NICK_LABEL"
+				description="COM_JOINUS_FORMULAR_FIELD_NICK_DESC"
+				size="40"
+				class="inputbox"
+				required="true"
+				default=""
+				/>
+		<field
+				name="class"
+				type="list"
+				label="COM_JOINUS_FORMULAR_FIELD_CLASS_LABEL"
+				description="COM_JOINUS_FORMULAR_FIELD_CLASS_DESC"
+				required="true"
+				default=""
+		>
+			<option value="warrior">COM_JOINUS_WARRIOR</option>
+			<option value="warlock">COM_JOINUS_WARLOCK</option>
+			<option value="druid">COM_JOINUS_DRUID</option>
+			<option value="mage">COM_JOINUS_MAGE</option>
+			<option value="priest">COM_JOINUS_PRIEST</option>
+			<option value="monk">COM_JOINUS_MONK</option>
+			<option value="hunter">COM_JOINUS_HUNTER</option>
+			<option value="deathknight">COM_JOINUS_DEATHKNIGHT</option>
+			<option value="rogue">COM_JOINUS_ROGUE</option>
+			<option value="paladin">COM_JOINUS_PALADIN</option>
+			<option value="shaman">COM_JOINUS_SHAMAN</option>
+		</field>
+		<field
+				name="specc"
+				type="list"
+				label="COM_JOINUS_FORMULAR_FIELD_SPECC_LABEL"
+				description="COM_JOINUS_FORMULAR_FIELD_SPECC_DESC"
+				required="true"
+				default=""
+		>
+			<option value="dd">COM_JOINUS_DD</option>
+			<option value="heal">COM_JOINUS_HEAL</option>
+			<option value="tank">COM_JOINUS_TANK</option>
+		</field>
+		<!--<field
+				name="armory"
+				type="URL"
+				label="COM_JOINUS_FORMULAR_FIELD_ARMORY_LABEL"
+				description="COM_JOINUS_FORMULAR_FIELD_ARMORY_DESC"
+				size="40"
+				class="inputbox"
+				required="true"
+				default=""
+				/>-->
+		<field
+				name="application"
+				type="editor"
+				label="COM_JOINUS_FORMULAR_FIELD_APPLICATION_LABEL"
+				description="COM_JOINUS_FORMULAR_FIELD_APPLICATION_DESC"
+				required="true"
+				width="520px"
+				height="250px"
+				buttons="false"
+				filter="safehtml"
+				/>
+	</fieldset>
+</form>

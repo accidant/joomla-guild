@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="2.5" type="plugin" group="system">
+	<name>PLG_SYSTEM_COMUSERSOVERRIDE</name>
+	<author>Thomas Joußen</author>
+	<creationDate>Oktober 2013</creationDate>
+	<authorEmail>info@der-schmale-grat.de</authorEmail>
+	<version>2.5.0</version>
+	<description>PLG_SYSTEM_COMUSERSOVERRIDE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="comusersoverride">comusersoverride.php</filename>
+	</files>
+	<languages>
+		<language tag="de-DE">de-DE.plg_system_comusersoverride.ini</language>
+		<language tag="de-DE">de-DE.plg_system_comusersoverride.sys.ini</language>
+	</languages>
+</extension>

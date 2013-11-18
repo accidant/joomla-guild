@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module"  method="upgrade" version="1.5">
+	<name>Klassensuche</name>
+	<creationDate>2012-08-15</creationDate>
+	<author>Sebastian Seesemann</author>
+	<authorEmail>info@cmstyles.de</authorEmail>
+	<authorUrl>www.cmstyles.de</authorUrl>
+	<copyright>Copyright (C) 2012  Cmstyles.de</copyright>	
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.2.5</version>
+	<description>MODULEDESCRIPTION</description>
+	<files>
+		<filename module="mod_klassensuche">mod_klassensuche.php</filename>
+		<folder>tmpl</folder>		
+		<folder>tmpl/images</folder>
+		<folder>tmpl/css</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_klassensuche.xml</filename>
+
+	</files>
+	<languages>
+    	<language tag="de-DE">language/de-DE.mod_klassensuche.ini</language>  
+		<language tag="en-EN">language/en-EN.mod_klassensuche.ini</language>  
+	</languages>
+	<params>
+		<param name="classname" type="text" default="" label="Class Name" description="Class Name Description" />
+	</params>
+ 
+	
+	<config>
+			<fields name="params">
+			<fieldset name="WELCOME_FIELDSET">
+			<field name="start" type="radio" default="0" label="START" description="">
+				</field>
+			</fieldset>
+			<fieldset name="FIRST_OPTIONS">
+			<field name="FIRST_OPTIONS_INTRO" type="radio" default="0" label="FIRST_OPTIONS_INTRO" description=" ">
+			</field>
+			 <field name="cover_letter_link" type="text" default="" label="CONTACTFORM" description="" />
+        <field name="themeClass" type="filelist" hide_none="true" default="grunge-voll.css" label="SELECT_THEME" directory="modules/mod_klassensuche/tmpl/css" filter="" exclude="index.html" stripext="" />
+		<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>	
+</fields>			
+			<fields name="params">
+			<fieldset name="WARCRAFT_FIELDSET">
+				<field name="warrior_status" type="radio" default="0" label="WARRIOR" description=" ">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="warrior_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="warrior_class2" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="warrior_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer1!" hr="true" />
+				<field name="paladin_status" type="radio" default="0" label="PALADIN" description=" ">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="paladin_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="paladin_class2" type="checkbox" value="heal.png" default="" label="HOLY" description="INFORMATION" />
+				<field name="paladin_class3" type="checkbox" value="dd.png" default="" label="RETRI" description="INFORMATION" />
+				<field name="paladin_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer2!" hr="true" />
+				<field name="hunter_status" type="radio" default="0" label="HUNTER" description=" ">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="hunter_class1" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="hunter_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer3!" hr="true" />
+			<field name="rogue_status" type="radio" default="0" label="ROGUE" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="rogue_class1" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="rogue_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer4!" hr="true" />
+			<field name="priest_status" type="radio" default="0" label="PRIEST" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="priest_class1" type="checkbox" value="heal.png" default="" label="DISZI" description="INFORMATION" />
+				<field name="priest_class2" type="checkbox" value="dd.png" default="" label="SHADOW" description="INFORMATION" />
+				<field name="priest_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer5!" hr="true" />
+			<field name="deathknight_status" type="radio" default="0" label="DEATHKNIGHT" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="deathknight_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="deathknight_class2" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="deathknight_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer6!" hr="true" />
+			<field name="shaman_status" type="radio" default="0" label="SHAMAN" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="shaman_class1" type="checkbox" value="heal.png" default="" label="RESTO" description="INFORMATION" />
+				<field name="shaman_class2" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="shaman_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer7!" hr="true" />
+			<field name="mage_status" type="radio" default="0" label="MAGE" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="mage_class1" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="mage_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer8!" hr="true" />
+			<field name="warlock_status" type="radio" default="0" label="WARLOCK" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="warlock_class1" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="warlock_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer9!" hr="true" />
+			<field name="monk_status" type="radio" default="0" label="MONK" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="monk_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="monk_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="monk_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="monk_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />	
+			<field type="spacer" name="spacer10!" hr="true" />
+			<field name="druid_status" type="radio" default="0" label="DRUID" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="druid_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="druid_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="druid_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="druid_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			</fieldset>
+			<fieldset name="STARWARS_FIELDSET">
+						<field name="jedi_knight_status" type="radio" default="0" label="JEDI_KNIGHT" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="jedi_knight_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="jedi_knight_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="jedi_knight_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="jedi_knight_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer12  !" hr="true" />
+						<field name="headhunter_status" type="radio" default="0" label="HEADHUNTER" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="headhunter_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="headhunter_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="headhunter_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="headhunter_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer13  !" hr="true" />
+						<field name="sith_warrior_status" type="radio" default="0" label="SITH_WARRIOR" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="sith_warrior_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="sith_warrior_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="sith_warrior_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="sith_warrior_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer14  !" hr="true" />
+						<field name="trooper_status" type="radio" default="0" label="TROOPER" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="trooper_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="trooper_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="trooper_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="trooper_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer15  !" hr="true" />
+						<field name="smuggler_status" type="radio" default="0" label="SMUGGLER" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="smuggler_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="smuggler_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="smuggler_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="smuggler_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer16  !" hr="true" />
+						<field name="empire_agent_status" type="radio" default="0" label="EMPIRE_AGENT" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="empire_agent_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="empire_agent_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="empire_agent_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="empire_agent_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer17  !" hr="true" />
+						<field name="sith_inquisitor_status" type="radio" default="0" label="SITH_INQUISITOR" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="sith_inquisitor_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="sith_inquisitor_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="sith_inquisitor_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="sith_inquisitor_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			<field type="spacer" name="spacer18  !" hr="true" />
+						<field name="ambassador_status" type="radio" default="0" label="AMBASSADOR" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="ambassador_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="ambassador_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
+				<field name="ambassador_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="ambassador_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+			</fieldset>
+						<fieldset name="ALL_SEARCH_FIELDSET">
+			<field name="all_status_wc" type="radio" default="0" label="ALL_WC_BACKEND" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="all_info_wc" type="text" default="" label="INFORMATION3" description="INFORMATION" size="50" />
+						<field type="spacer" name="spacer11  !" hr="true" />
+			<field name="all_status_sw" type="radio" default="0" label="ALL_SW_BACKEND" description=" ">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+				<field name="all_info_sw" type="text" default="" label="INFORMATION3" description="INFORMATION" size="50" />
+				</fieldset>
+		</fields>
+  </config>			
+</install>

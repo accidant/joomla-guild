@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset>
+		<field name="id" type="hidden" />
+		<field
+			name="user_id"
+			type="userlist"
+			label="COM_PUNISHMENT_VIOLATION_USER_LABEL"
+			description="COM_PUNISHMENT_VIOLATION_USER_DESC"
+			required="true"
+			default=""
+			/>
+		<field
+			name="violation_id"
+			type="violationlist"
+			label="COM_PUNISHMENT_VIOLATION_LABEL"
+			description="COM_PUNISHMENT_VIOLATION_DESC"
+			required="true"
+			default=""
+			/>
+	</fieldset>
+</form>

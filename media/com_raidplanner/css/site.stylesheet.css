@@ -1,0 +1,195 @@
+/***********************
+* RAIDPLANNER
+************************/
+table.wowraids tr td{
+	cursor: pointer;
+}
+
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th{
+
+	padding: 4px 8px;
+	border-bottom: 1px solid #552B12;
+	font-size: 16px;
+	text-align: left;
+}
+
+table tbody tr td{
+	border-bottom: 1px solid #271B15;
+	padding: 4px 8px;
+}
+
+table tbody tr:hover td{
+	/*background-color: #261307;*/
+}
+
+table tbody tr td.table-actions{
+	text-align: right;
+}
+
+table tfoot tr td{
+	padding: 10px 8px 4px;
+}
+
+.empty-result{
+	text-align: center;
+	font-style: italic;
+}
+
+#current_raid{
+	padding: 10px;
+}
+
+#current_raid .box{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.35);
+	border-radius: 5px;
+	padding: 15px;
+}
+
+#current_raid .box .img{
+	float: left;
+}
+
+#current_raid .box .title{
+	float: left;
+	width: 300px;
+	padding: 0 15px;
+}
+
+#current_raid .box .adminFunction{
+	float: right;
+	width: 250px;
+	padding: 0;
+	text-align: right;
+}
+
+#current_raid .box .title h1{
+	border: none;
+	color: #FFF;
+	line-height: 20px;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+#current_raid .box .title p{
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	color: #AE5016;
+}
+
+#current_raid h2{
+	border-bottom: 1px solid #46230E;
+	color: #7E3406;
+	font-size: 14px;
+}
+
+.memberList table td{
+	border: none;
+}
+
+.confirmed,
+.accepted{color: #0AD71A;}
+.waiting,
+.temporary{color: #D66225;}
+.cancelled,
+.refused,
+.rejected{color: #FF1815;;}
+.invited{color: #FFFF00;}
+tr.selected_raid td{
+	background-color: #2f2420;
+}
+
+.inline-links ul{
+	margin: 0;
+	padding: 20px 0 0 160px;
+	list-style: none;
+}
+
+.inline-links ul li{
+	display: inline;
+	padding-right: 5px;
+}
+
+.raid-icon{
+	background-image: url(../images/raid-icons.jpg);
+	width: 61px;
+	height: 61px;
+}
+.raid-icon-small{
+	background-image: url(../images/raid-icons-small.jpg);
+	width: 31px;
+	height: 31px;
+}
+
+.raid-icon-small.mc{background-position: 0 0;}
+.raid-icon-small.bwl{background-position: -32px 0;}
+.raid-icon-small.aq10{background-position: -63px 0;}
+.raid-icon-small.aq40{background-position: -95px 0;}
+.raid-icon-small.kar{	background-position: -126px 0;}
+.raid-icon-small.gru{	background-position: -158px 0;}
+.raid-icon-small.mag{	background-position: -189px 0;}
+.raid-icon-small.ssc{	background-position: -252px 0;}
+.raid-icon-small.tk{	background-position: -283px 0;}
+.raid-icon-small.mh{	background-position: -315px 0;}
+.raid-icon-small.bt{	background-position: -347px 0;}
+.raid-icon-small.sp{	background-position: -379px 0;}
+.raid-icon-small.nax{	background-position: -411px 0;}
+.raid-icon-small.os{	background-position: -442px 0;}
+.raid-icon-small.voa{	background-position: -473px 0;}
+.raid-icon-small.eoe{	background-position: -505px 0;}
+.raid-icon-small.uld{	background-position: -536px 0;}
+.raid-icon-small.toc{	background-position: -567px 0;}
+.raid-icon-small.ony{	background-position: -600px 0;}
+.raid-icon-small.icc{	background-position: -631px 0;}
+.raid-icon-small.rs{	background-position: -662px 0;}
+.raid-icon-small.bh{	background-position: -694px 0;}
+.raid-icon-small.bot{	background-position: -725px 0;}
+.raid-icon-small.bd{	background-position: -757px 0;}
+.raid-icon-small.tfw{	background-position: -789px 0;}
+.raid-icon-small.fl{	background-position: -820px 0;}
+.raid-icon-small.ds{	background-position: -851px 0;}
+.raid-icon-small.mv{	background-position: -882px 0;}
+.raid-icon-small.hf{	background-position: -914px 0;}
+.raid-icon-small.tes{	background-position: -946px 0;}
+.raid-icon-small.tot{	background-position: -977px 0;}
+.raid-icon-small.soo{	background-position: -1009px 0;}
+
+.raid-icon.mc{background-position: 0 0;}
+.raid-icon.bwl{background-position: -61px 0;}
+.raid-icon.aq10{background-position: -122px 0;}
+.raid-icon.aq40{background-position: -183px 0;}
+.raid-icon.kar{	background-position: -244px 0;}
+.raid-icon.gru{	background-position: -305px 0;}
+.raid-icon.mag{	background-position: -366px 0;}
+.raid-icon.ssc{	background-position: -488px 0;}
+.raid-icon.tk{	background-position: -549px 0;}
+.raid-icon.mh{	background-position: -610px 0;}
+.raid-icon.bt{	background-position: -671px 0;}
+.raid-icon.sp{	background-position: -732px 0;}
+.raid-icon.nax{	background-position: -793px 0;}
+.raid-icon.os{	background-position: -854px 0;}
+.raid-icon.voa{	background-position: -915px 0;}
+.raid-icon.eoe{	background-position: -976px 0;}
+.raid-icon.uld{	background-position: -1037px 0;}
+.raid-icon.toc{	background-position: -1098px 0;}
+.raid-icon.ony{	background-position: -1159px 0;}
+.raid-icon.icc{	background-position: -1220px 0;}
+.raid-icon.rs{	background-position: -1281px 0;}
+.raid-icon.bh{	background-position: -1342px 0;}
+.raid-icon.bot{	background-position: -1403px 0;}
+.raid-icon.bd{	background-position: -1464px 0;}
+.raid-icon.tfw{	background-position: -1525px 0;}
+.raid-icon.fl{	background-position: -1586px 0;}
+.raid-icon.ds{	background-position: -1647px 0;}
+.raid-icon.mv{	background-position: -1708px 0;}
+.raid-icon.hf{	background-position: -1769px 0;}
+.raid-icon.tes{	background-position: -1830px 0;}
+.raid-icon.tot{	background-position: -1891px 0;}
+.raid-icon.soo{	background-position: -1952px 0;}

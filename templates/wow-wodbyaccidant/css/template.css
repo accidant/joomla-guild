@@ -1,0 +1,910 @@
+@font-face {
+	font-family: 'LigatureSymbols';
+	src: url('fonts/LigatureSymbols-2.11.eot');
+	src: url('fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+	url('fonts/LigatureSymbols-2.11.woff') format('woff'),
+	url('fonts/LigatureSymbols-2.11.ttf') format('truetype'),
+	url('fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+	src: url('fonts/LigatureSymbols-2.11.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.lsf,
+ul.actions,
+.lsf-icon:before,
+.footer-block ul li a.mail:before,
+.footer-block ul.weblinks li a:before,
+.footer-block ul li a.static-content:before{
+	font-family: 'LigatureSymbols';
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-decoration: none;
+}
+
+.lsf-icon{text-decoration: none;}
+.lsf-icon:before {font-size: 140%;}
+
+.lsf-icon:after {
+	content:attr(title);
+	margin-left:0.3em;
+	font-size:140%;
+}
+
+.footer-block ul li a.mail:before,
+.footer-block ul.weblinks li a:before,
+.footer-block ul li a.static-content:before{
+	margin-right:0.3em;
+	font-size:120%;
+}
+.footer-block ul.weblinks li a:before{content: '\E082';}
+.footer-block ul li a.mail:before{content: '\E08a';}
+.footer-block ul li a.static-content:before{content: '\E08d';}
+
+.lsf-icon.right:after,
+.lsf-icon.edit:after,
+.lsf-icon.copy:after{
+	content: "";
+
+}
+/*.lsf-icon.right:after {content: '\E112';}*/
+.lsf-icon.edit:before {content: '\E041';}
+.lsf-icon.copy:before {content: '\E038';}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+	font: 12px/1.5 Arial,Verdana,sans-serif
+}
+
+body{
+	background-color: #190504;
+	/*background: url(../images/background-bottom.png) center bottom no-repeat #190504;*/
+    color: #FFFFFF;
+}
+
+#body-wrapper{
+	background: url(../images/background-top.png) center top no-repeat transparent;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+a,
+a:link,
+a:visited,
+a:active{
+	color: #FFAE00;
+}
+
+a:hover{
+	color: #EEEEEE;
+}
+
+
+h1{
+	font-size: 24px;
+	font-weight: bold;
+    margin: 0 0 15px 0;
+	/*color: #FEF092;*/
+	color: #FDEEA4;
+	padding: 0 0 0 0;
+	border-bottom: 2px solid #552B12;
+}
+
+h1 a,
+h1 a:link,
+h1 a:visited,
+h1 a:hover
+{
+	text-decoration: none;
+	color: #FDEEA4;
+}
+
+h1 a:hover{
+	text-decoration: underline;
+}
+
+#topbar{
+    background: url(../images/topbar-bg.png) center top no-repeat;
+    height: 104px;
+	visibility: hidden;
+	display:none;
+}
+
+#header{
+    height: 280px;
+	width: 996px;
+	margin: 0 auto;
+	/*padding-bottom: 30px;*/
+}
+
+#logo{
+    padding: 125px 0 0 50px;
+}
+
+#navigation{
+	position: relative;
+	right: auto;
+	width: 1100px;
+	margin: 0 auto;
+    height: 190px;
+	background: url(../images/nav-bg.png) center center no-repeat;
+	overflow: visible;
+	/*background-color: #1A0F08;*/
+}
+
+#topbar-wrapper,
+#wrapper{
+    width: 996px;
+    margin: 0 auto;
+}
+
+#wrapper{
+	margin-top: -50px;
+	/*padding-top: 80px;*/
+}
+
+#content{
+	margin-top: 10px;
+	padding-top: 20px;
+	background: url(../images/bg_shadow.png) repeat-y 0 0 #1e1613;
+    height: auto;
+	color: #EFC9A0;
+	word-wrap: break-word;
+}
+
+#left{
+    width: 733px;
+    float: left;
+    padding-right: 10px;
+	/*background-color: #1A0F08;*/
+}
+
+#right{
+    float: left;
+    width: 250px;
+}
+
+#footer{
+	background: url(../images/footer-bg.png) top center rgba(0,0,0,0.8) no-repeat;
+	/*background-color: rgba(0,0,0,0.8);*/
+	padding: 40px 20px 10px;
+}
+
+.footer-block{float: left;}
+
+.footer-block.footer-1{width: 50%;}
+.footer-block.footer-2{width: 15%;}
+.footer-block.footer-3{width: 35%;}
+
+.footer-block ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footer-block ul li a{
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.footer-block ul.weblinks.separated{
+	float: left;
+	width: 50%;
+}
+
+.foote-block ul.menu li{
+	width: 140px;
+}
+
+textarea,
+input{
+    background-color: #F1EBD7;
+	border-radius: 5px;
+	padding: 5px;
+    border: none;
+}
+
+input[type="text"]{
+	height: 20px;
+}
+
+fieldset .field input[type=checkbox]{
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+.button2-left a,
+button,
+a.button,
+input.button,
+button.button,
+/*button[type="submit"],*/
+input[type="submit"]{
+	font-family: "Sans";
+	cursor: pointer;
+	text-align:center;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	border-radius: .5em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	font-size: 14px;
+	padding: .3em 1em .35em;
+	display: inline-block;
+	outline: none;
+	color: #FFAE00;
+	background: #6a2303;
+	border: solid 1px #551108;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6a2303), to(#3e0d07));
+	background: -moz-linear-gradient(top,  #6a2303,  #3e0d07);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a2303', endColorstr='#3e0d07');
+}
+
+.button2-left a:hover,
+button:hover,
+a.button:hover,
+input.button:hover,
+button.button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover{
+	color: #FFF;
+	background: #862d05;
+	border: solid 1px #8a1c0d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#862d05), to(#5d140b));
+	background: -moz-linear-gradient(top,  #862d05,  #5d140b);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#862d05', endColorstr='#5d140b');
+}
+
+.button2-left a:disabled,
+.button2-left a:disabled:hover,
+button:disabled,
+button:disabled:hover,
+a.button:disabled,
+a.button:disabled:hover,
+input.button:disabled,
+input.button:disabled:hover,
+button.button:disabled,
+button.button:disabled:hover,
+button[type="submit"]:disabled,
+button[type="submit"]:disabled:hover,
+input[type="submit"]:disabled,
+input[type="submit"]:disabled:hover
+{
+	color: #B1BAC3;
+	cursor: default;
+	background: #692303;
+	border: solid 1px #551108;
+	background: -webkit-gradient(linear, left top, left bottom, from(#692303), to(#3e0d07));
+	background: -moz-linear-gradient(top,  #692303,  #3e0d07);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#692303', endColorstr='#3e0d07');
+}
+
+.toggle-editor{
+	padding: 5px 0 5px 160px;
+}
+
+.toggle-editor .button2-left,
+.toggle-editor .button2-left div{
+	float: none;
+	margin: 0;
+}
+.button2-left,
+.button2-left .blank{
+	background: transparent;
+}
+
+.toggle-editor .button2-left a{
+	float: none;
+	height: auto;
+	line-height: normal;
+
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th{
+
+	padding: 4px 8px;
+	border-bottom: 1px solid #552B12;
+	font-size: 16px;
+	text-align: left;
+}
+
+table tbody tr td{
+	border-bottom: 1px solid #271B15;
+	padding: 4px 8px;
+}
+
+table tbody tr:hover td{
+	/*background-color: #261307;*/
+}
+
+table tbody tr td.table-actions{
+	text-align: right;
+}
+
+table tfoot tr td{
+	padding: 10px 8px 4px;
+}
+
+.empty-result{
+	text-align: center;
+	font-style: italic;
+}
+
+/************************
+* FORMULAR
+*************************/
+fieldset legend{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	border-bottom: 1px solid #3f3732;
+	display: block;
+	width: 100%;
+}
+
+fieldset{
+	border: none;
+	margin:0;
+	padding: 0;
+}
+
+fieldset dt,
+fieldset dd,
+fieldset .formelm,
+fieldset .field{
+	margin-bottom: 5px;
+}
+fieldset dt,
+fieldset .formelm label,
+fieldset .field label{
+	display: block;
+	float: left;
+	color: #EFC9A0;
+	font-size: 14px;
+	/*line-height: 36px;*/
+	width: 160px;
+}
+fieldset dd input,
+fieldset .formelm input,
+fieldset .field input{
+	width: 510px;
+}
+
+fieldset .formelm.half,
+fieldset .field.half{
+	width: 345px;
+	float: left;
+}
+fieldset dd input.date_field,
+fieldset .formelm.date_field.half input,
+fieldset .field.date_field.half input,
+fieldset .formelm.date_field input,
+fieldset .field.date_field input,
+fieldset .formelm input.date_field,
+fieldset .field input.date_field{
+	width: 140px;
+}
+fieldset dd .calendar,
+fieldset .formelm .calendar,
+fieldset .field .calendar{
+	margin-left: 5px;
+	background: none;
+	border: none;
+}
+
+fieldset .formelm.half textarea,
+fieldset .formelm.half input,
+fieldset .field.half textarea,
+fieldset .field.half input{
+	width: 190px;
+}
+
+fieldset dd textarea,
+fieldset .formelm textarea,
+fieldset .field textarea{
+	resize: none;
+	background-color: #F1EBD7;
+	border-radius: 5px;
+	border: medium none;
+	padding: 5px;
+	width: 510px;
+	height: 140px;
+}
+
+fieldset.checkboxes ul{
+	padding: 0;
+	margin: 0;
+}
+fieldset.checkboxes ul li{
+	list-style: none;
+}
+fieldset.checkboxes ul li label{
+	display: inline;
+	float: none;
+}
+
+.buttons{
+	padding-left: 160px;
+}
+
+/************************
+* TOP
+*************************/
+.tip-wrap{
+	background-color: #151616;
+	padding: 5px;
+	border-radius: 5px;
+	border: medium none;
+}
+
+/************************
+* RIGHT CONTENT
+*************************/
+
+#right input[type="text"],
+#right input[type="password"]{
+    width: 214px;
+}
+
+#right input[type="submit"]{
+    width: 224px;
+    height: 30px;
+}
+
+#right ul{
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.right-box{
+	width: 250px;
+	margin-bottom: 5px;
+}
+
+.right-box .header{
+	background: url(../images/right-box-bg.png) center center no-repeat;
+	height: 22px;
+	padding: 10px 15px;
+}
+
+.right-box .header h1{
+	font-size: 16px;
+	font-weight: normal;
+	color: #bababa;
+	padding: 0;
+	border: none;
+}
+
+.right-box .content{
+	padding: 10px;
+	border: 1px solid #3f3732;
+	border-top: none;
+	/*background-color: #0b0704;*/
+	background: url(../images/right-bg.png) center center;
+	box-shadow: inset 0 0 10px #000;
+	-moz-box-shadow: inset 0 0 10px #000;
+	-webkit-box-shadow: inset 0 0 10px #000;
+
+	/*background-color: #1A0F08;*/
+}
+
+/*********************
+* NAVIGATION
+**********************/
+#navigation ul{
+	margin: 10px 0;
+	padding-left: 90px;
+	position: absolute;
+	bottom: 45px;
+    list-style: none;
+}
+
+#navigation ul li{
+	text-align: center;
+    float: left;
+    font-size: 20px;
+}
+#navigation ul li:last-child{
+	background: url(../images/menuSeperator.png) right center no-repeat;
+}
+
+
+
+#navigation ul li a{
+	background: url(../images/menuSeperator.png) left center no-repeat;
+	padding: 15px 0;
+	display: block;
+	width: 150px;
+    text-decoration: none;
+}
+
+#navigation ul li:hover a{
+	background-color: rgba(255,255,255,0.02);
+}
+
+/*********************
+* CONTENT
+**********************/
+ul.actions {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+ul.actions{margin-left: 10px; display: inline-block;}
+ul.actions li{display: inline;}
+ul.actions li a{text-decoration: none}
+ul.actions li a img{display: none;}
+ul.actions li a:before{font-size: 140%;}
+
+ul.actions li.edit a:before{content: '\E041';}
+ul.actions li.email a:before{content: '\E08a';}
+ul.actions li.print a:before{content: '\E10a';}
+ul.actions li.edit a{content: "Bearbeiten";}
+
+div.note,{
+	margin: 0;
+}
+
+div.note{
+    color: #855B47;
+    font-size: 100%;
+}
+a.readmore{
+	float: right;
+	text-decoration: none;
+}
+
+span.author{
+    color: #FFB100;
+    font-size: 100%;
+}
+
+.img-intro-left{
+	float: left;
+	width: 150px;
+	height: 130px;
+	border: 1px solid #541F09;
+	margin: 16px 15px 0 0px;
+}
+
+.img-fulltext-left{
+	text-align: center;
+}
+
+.img-fulltext-left img{
+	margin: 20px 0 0 0;
+	box-shadow: 0 0 20px #000000;
+}
+
+.profile,
+
+.profile-edit,
+.item-page,
+.login,
+.remind,
+.reset,
+.content-container,
+.registration,
+.blog-featured article{
+	min-height: 305px;
+	/*height: 305px;*/
+    padding: 10px 20px;
+	background: url(../images/block-bg.jpg) top center #1e1613 no-repeat;
+
+}
+
+.item-separator{
+    display: none;
+}
+/*********************
+* mod Klassensuche
+**********************/
+#priest.wow-classes,
+#warrior.wow-classes,
+#warlock.wow-classes,
+#druid.wow-classes,
+#mage.wow-classes,
+#deathknight.wow-classes,
+#monk.wow-classes,
+#rogue.wow-classes,
+#hunter.wow-classes,
+#paladin.wow-classes{
+	background-size: 244px auto;
+	margin: 0 auto 4px;
+	width: 244px;
+	height: 47px;
+}
+
+.content #mod_klassensuche .title{
+	margin-top: 0;
+}
+
+/****************************
+* mod_wowchars
+****************************/
+.wowchars{
+	position: relative;
+}
+
+.wowchar .avatar{
+	float: left;
+	width: 84px;
+	height: 84px;
+}
+
+.wowchar .stats{
+	float: left;
+	padding-left: 5px;
+	width: 130px;
+}
+
+.wowchar .stats p{
+	margin: 0;
+	padding: 0;
+}
+
+.wowchar .guild{
+	color: #FFB100;
+}
+
+.wowchar .select-chars{
+	background: url(../images/arrow_down.png) center center no-repeat;
+	padding: 2px 8px;
+}
+
+.wowchar .select-chars:hover{
+	cursor: pointer;
+	background: url(../images/arrow_down_hover.png) center center no-repeat;
+}
+
+.wowchars #alts{
+	z-index: 50000;
+	left: 88px;
+	top: 20px;
+	position: absolute;
+	display: none;
+	background-color: #151616;
+}
+
+.wowchars #alts .avatar{
+	display: none;
+}
+.wowchars #alts .wowchar .select-chars{
+	visibility: hidden;
+}
+
+.wowchars #alts .wowchar:hover{
+	cursor: pointer;
+	background-color: #0d0e0e;
+}
+
+.wowchars #alts .wowchar{
+	padding: 5px;
+	border-bottom: 1px solid #4a4b4b;
+}
+.wowchars #alts .wowchar:last-child{
+	border: none;
+}
+/***************************
+* Class-Color
+****************************/
+.warrior{ color: #C79C6E !important;}
+.druid{ color: #FF7D0A !important;}
+.mage{ color: #69CCF0 !important;}
+.deathknight{ color: #C41F3B !important;}
+.monk{ color: #00FF96 !important;}
+.priest{ color: #FFFFFF !important;}
+.paladin{ color: #F58CBA !important;}
+.rogue{ color: #FFF569 !important;}
+.warlock{ color: #9482C9 !important;}
+.shaman{ color: #0070DE !important;}
+.hunter{ color: #ABD473 !important;}
+.alliance{ border: 1px solid #00BBF6;}
+.horde{ border: 1px solid #E23739;}
+
+
+/******************************
+* LIGHTBOX
+******************************/
+#sbox-content,
+#sbox-window{
+	background-color: #1A0F08;
+}
+
+#lightbox body{
+	background-image: none;
+	background-color: #1A0F08;
+}
+
+#lightbox h1{
+	color: #FDEEA4;
+	padding: 0 0 0 0;
+	border-bottom: 2px solid #552B12;
+	margin-bottom: 15px;
+}
+
+#lightbox fieldset .field input{
+	width: 180px;
+}
+
+/********************************
+* WowProgress
+********************************/
+#wowranking{
+	padding-top: 15px;
+	width: 480px;
+}
+
+#wowranking h1{
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+#wowranking p.guild{
+	font-size: 20px;
+	width: 165px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#wowranking p.guild a{
+	color: #E23739;
+	text-decoration: none;
+}
+#wowranking p.guild a:hover{
+	text-decoration: underline;
+}
+
+#wowranking ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#wowranking ul li{
+	font-size: 20px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#wowranking ul li a{
+	text-decoration: none;
+	color: #1EFF00;
+}
+
+#wowranking ul li.top10 a{color: #FF8000}
+#wowranking ul li.top100 a{color: #A335EE}
+#wowranking ul li.top2500 a{color: #0070DD}
+#wowranking ul li a .realm,
+#wowranking ul li a .west,
+#wowranking ul li a .world{color: #FDEEA4}
+
+
+
+
+/*******************
+* plg Profile
+********************/
+.profile-left{
+	width: 200px;
+	padding-right: 20px;
+	float: left;
+}
+
+.profile-edit .avatar,
+.profile .avatar{
+	border: 1px solid #000000;
+	width: 84px;
+	height: 85px;
+	line-height: 85px;
+}
+.profile-edit .avatar img,
+.profile .avatar img{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+.profile-left dl{
+	font-size: 1em;
+}
+
+.profile-left dt{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.profile-left dd{
+	display: inline-block;
+	margin: 0;
+}
+.profile fieldset dl{
+	margin: 0;
+}
+
+.profile fieldset dt{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+fieldset dd:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+/*********************
+* TabDesign
+**********************/
+table.tabs tr th{
+	moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #372511;
+	border-image: none;
+	border-radius: 4px 4px 0 0;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	box-shadow: 0 0 20px #000000;
+	color: #FF9900;
+	cursor: pointer;
+	float: left;
+	/*font-family: Georgia,"Times New Roman",Times,serif;*/
+	font-size: 12px;
+	padding: 7px 14px 2px;
+	margin: 0 1px;
+}
+
+table.tabs tr th.open{
+	margin-top: -5px;
+	padding: 7px 14px;
+}
+
+.tabs-content{
+	position: relative;
+}
+
+.tabs-content div.content{
+	background: url(../images/right-bg.png) center center;
+	/*background-color: #1A0F08;
+	background-position: right -235px;
+	background-repeat: no-repeat;*/
+	border: 1px solid #372511;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 20px #000000;
+	line-height: 1.5em;
+	margin-bottom: 3px;
+	padding: 20px;
+	display: none;
+}
+
+.tabs-content div.content.current{
+	display: block;
+}

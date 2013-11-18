@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="addchar">
+	<fieldset name="addchar">
+
+		<field
+				name="realm"
+				type="text"
+				multiple="false"
+				label="COM_WOWCHAR_FORM_LBL_ADDWOWCHAR_REALM"
+				description="COM_WOWCHAR_FORM_DESC_ADDWOWCHAR_REALM"
+				required="true"
+				/>
+		<field
+				name="charname"
+				type="text"
+				description="COM_WOWCHAR_FORM_DESC_ADDWOWCHAR_CHARNAME"
+				label="COM_WOWCHAR_FORM_LBL_ADDWOWCHAR_CHARNAME"
+				required="true"
+				/>
+	</fieldset>
+</form>

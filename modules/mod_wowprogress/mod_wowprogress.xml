@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>WowProgress</name>
+	<author>Thomas Joußen</author>
+	<version>1.0.0</version>
+	<descrition>Zeigt das Guildenranking auf wowprogress.com</descrition>
+
+	<files>
+		<filename>mod_wowprogress.xml</filename>
+		<filename module="mod_wowprogress">mod_wowprogress.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+</extension>

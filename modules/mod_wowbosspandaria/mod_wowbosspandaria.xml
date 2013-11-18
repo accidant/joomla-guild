@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	method="upgrade">
+
+<name>WoW Boss - Pandaria Edition</name>
+<author>Tolrem</author>
+<creationDate>feb 2013</creationDate>
+<copyright>Tolrem.net</copyright>
+<license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+<authorEmail>tolremaster@gmail.com</authorEmail>
+<authorUrl>http://www.tolrem.net</authorUrl>
+<version>5.4.2</version>
+<description>MOD_WOWBOSSPANDARIA_DESC</description>
+<files>
+	        <filename module="mod_wowbosspandaria">mod_wowbosspandaria.php</filename>
+	        <filename>index.html</filename>
+	        <filename>helper.php</filename>
+	        <folder>tmpl</folder>
+			<folder>tmpl/images</folder>
+			<folder>tmpl/css</folder>
+</files>
+
+<languages folder="language">
+	        <language tag="en-GB">en-GB/en-GB.mod_wowbosspandaria.ini</language>
+			<language tag="en-GB">en-GB/en-GB.mod_wowbosspandaria.sys.ini</language>
+	        <language tag="fr-FR">fr-FR/fr-FR.mod_wowbosspandaria.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.mod_wowbosspandaria.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.mod_wowbosspandaria.ini</language>
+			<language tag="de-DE">de-DE/de-DE.mod_wowbosspandaria.sys.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.mod_wowbosspandaria.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.mod_wowbosspandaria.sys.ini</language>
+			<language tag="es-ES">es-ES/es-ES.mod_wowbosspandaria.ini</language>
+			<language tag="es-ES">es-ES/es-ES.mod_wowbosspandaria.sys.ini</language>
+			<language tag="it-IT">it-IT/it-IT.mod_wowbosspandaria.ini</language>
+			<language tag="it-IT">it-IT/it-IT.mod_wowbosspandaria.sys.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.mod_wowbosspandaria.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.mod_wowbosspandaria.sys.ini</language>
+</languages>
+<config>
+    <fields name="params">
+		<fieldset name="basic">
+			<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+						
+			<field name="titlesfont" type="text" default="Lobster" label="MOD_WOWBOSSPANDARIA_TITLES_FONT" description="MOD_WOWBOSSPANDARIA_FONT_DESC" size="10" />
+			<field name="contentfont" type="text" default="Gudea" label="MOD_WOWBOSSPANDARIA_CONTENT_FONT" description="MOD_WOWBOSSPANDARIA_FONT_DESC" size="10" />
+		
+			<field name="jquery" type="radio" default="1" label="MOD_WOWBOSSPANDARIA_JQUERY" description="MOD_WOWBOSSPANDARIA_JQUERY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field name="progressbar" type="radio" default="1" label="MOD_WOWBOSSPANDARIA_PROGRESSBAR" description="MOD_WOWBOSSPANDARIA_PROGRESSBAR_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field name="mouseover" type="radio" default="1" label="MOD_WOWBOSSPANDARIA_MOUSEOVER" description="MOD_WOWBOSSPANDARIA_MOUSEOVER_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+		</fieldset>
+			
+		<fieldset name="appearance" label="MOD_WOWBOSSPANDARIA_APPEARANCE">
+			<field name="wrapper" type="list" default="0" label="MOD_WOWBOSSPANDARIA_WRAPPER" description="MOD_WOWBOSSPANDARIA_WRAPPER_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field name="wrappershadow" type="list" default="1" label="MOD_WOWBOSSPANDARIA_WRAPPERSHADOW" description="MOD_WOWBOSSPANDARIA_WRAPPERSHADOW_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field name="wrappercolor" type="text" default="#ffffff" label="MOD_WOWBOSSPANDARIA_WRAPPERCOLOR" description="MOD_WOWBOSSPANDARIA_WRAPPERCOLOR_DESC" size="10" />
+		</fieldset>		
+		
+		<fieldset name="siegeoforgrimmar" label="MOD_WOWBOSSPANDARIA_SIEGE_OF_ORGRIMMAR">
+			<field name="toggleorgrimmar" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TOGGLE" description="MOD_WOWBOSSPANDARIA_TOGGLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="orgrimmar" type="list" default="0" label="MOD_WOWBOSSPANDARIA_SIEGE_OF_ORGRIMMAR" description="MOD_WOWBOSSPANDARIA_SHOW_OR_HIDE_BOSS">
+			<option value="0">MOD_WOWBOSSPANDARIA_HIDE</option>
+			<option value="1">MOD_WOWBOSSPANDARIA_10_PLAYERS</option>
+			<option value="2">MOD_WOWBOSSPANDARIA_25_PLAYERS</option>
+			<option value="3">MOD_WOWBOSSPANDARIA_FLEXIBLE</option>
+			</field>
+			<field name="immerseus" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_IMMERSEUS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="fallenprotectors" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_FALLEN_PROTECTORS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="norushen" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_NORUSHEN" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="shaofpride" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_SHAOFPRIDE" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="galakras" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_GALAKRAS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="ironjuggernaut" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_IRON_JUGGERNAUT" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="darkshaman" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_DARK_SHAMAN" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="nazgrim" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_NAZGRIM" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="malkorok" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_MALKOROK" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>	
+			<field name="spoils" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_SPOILS_OF_PANDARIA" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="thok" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_THOK" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>	
+			<field name="blackfuse" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_BLACKFUSE" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>				
+			<field name="paragons" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_PARAGONS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>									
+			<field name="garrosh" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_GARROSH" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="throneofthunder" label="MOD_WOWBOSSPANDARIA_THRONE_OF_THUNDER">
+			
+			<field name="toggletot" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TOGGLE" description="MOD_WOWBOSSPANDARIA_TOGGLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="tot" type="list" default="0" label="MOD_WOWBOSSPANDARIA_THRONE_OF_THUNDER" description="MOD_WOWBOSSPANDARIA_SHOW_OR_HIDE_BOSS">
+			<option value="0">MOD_WOWBOSSPANDARIA_HIDE</option>
+			<option value="1">MOD_WOWBOSSPANDARIA_10_PLAYERS</option>
+			<option value="2">MOD_WOWBOSSPANDARIA_25_PLAYERS</option>
+			</field>
+			<field name="jinrokh" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_JINROKH" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="horridon" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_HORRIDON" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="elders" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_ELDERS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="tortos" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TORTOS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="megaera" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_MEGAERA" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="jikun" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_JIKUN" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="durumu" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_DURUMU" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="primordius" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_PRIMORDIUS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="animus" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_ANIMUS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="ironqon" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_IRONQON" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="twinconsorts" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TWINCONSORTS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="leishen" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_LEISHEN" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="raden" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_RADEN" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+		</fieldset>
+
+			
+		<fieldset name="heartoffear" label="MOD_WOWBOSSPANDARIA_HEART_OF_FEAR">
+			<field name="togglehof" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TOGGLE" description="MOD_WOWBOSSPANDARIA_TOGGLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="hof" type="list" default="0" label="MOD_WOWBOSSPANDARIA_HEART_OF_FEAR" description="MOD_WOWBOSSPANDARIA_SHOW_OR_HIDE_BOSS">
+			<option value="0">MOD_WOWBOSSPANDARIA_HIDE</option>
+			<option value="1">MOD_WOWBOSSPANDARIA_10_PLAYERS</option>
+			<option value="2">MOD_WOWBOSSPANDARIA_25_PLAYERS</option>
+			</field>
+			<field name="zorlok" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_ZORLOK" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="tayak" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TAYAK" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="garalon" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_GARALON" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="meljarak" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_MELJARAK" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="unsok" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_UNSOK" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="shekzeer" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_SHEKZEER" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="mogushanvaults" label="MOD_WOWBOSSPANDARIA_MOGUSHAN_VAULTS">
+			<field name="togglemogushan" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TOGGLE" description="MOD_WOWBOSSPANDARIA_TOGGLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="mogushan" type="list" default="0" label="MOD_WOWBOSSPANDARIA_MOGUSHAN_VAULTS" description="MOD_WOWBOSSPANDARIA_SHOW_OR_HIDE_BOSS">
+			<option value="0">MOD_WOWBOSSPANDARIA_HIDE</option>
+			<option value="1">MOD_WOWBOSSPANDARIA_10_PLAYERS</option>
+			<option value="2">MOD_WOWBOSSPANDARIA_25_PLAYERS</option>
+			</field>
+			<field name="stoneguard" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_STONEGUARD" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="feng" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_FENG" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="garajal" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_GARAJAL" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="spiritkings" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_SPIRITKINGS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="elegon" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_ELEGON" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="emperor" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_EMPEROR" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="terraceofendlessspring" label="MOD_WOWBOSSPANDARIA_TERRACE_OF_ENDLESS_SPRING">
+			<field name="toggleterrace" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TOGGLE" description="MOD_WOWBOSSPANDARIA_TOGGLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="terrace" type="list" default="0" label="MOD_WOWBOSSPANDARIA_TERRACE_OF_ENDLESS_SPRING" description="MOD_WOWBOSSPANDARIA_SHOW_OR_HIDE_BOSS">
+			<option value="0">MOD_WOWBOSSPANDARIA_HIDE</option>
+			<option value="1">MOD_WOWBOSSPANDARIA_10_PLAYERS</option>
+			<option value="2">MOD_WOWBOSSPANDARIA_25_PLAYERS</option>
+			</field>
+			<field name="protectors" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_PROTECTORS" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="tsulong" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_TSULONG" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="leishi" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_LEISHI" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+			<field name="shaoffear" type="radio" default="0" label="MOD_WOWBOSSPANDARIA_SHAOFFEAR" description="MOD_WOWBOSSPANDARIA_SELECT_BOSS_DESC">
+				<option value="0">MOD_WOWBOSSPANDARIA_UNDEFEATED</option>
+				<option value="1">MOD_WOWBOSSPANDARIA_DEFEAT_NORMAL</option>
+				<option value="2">MOD_WOWBOSSPANDARIA_DEFEAT_HEROIC</option>
+			</field>
+		</fieldset>
+    </fields>
+</config>
+
+<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<server type="extension" priority="1" name="WoW Boss Pandaria Edition Module Update">http://update.tolrem.net/wow_bosspandaria/wow_bosspandaria_update.xml</server>
+	</updateservers>
+
+</extension>

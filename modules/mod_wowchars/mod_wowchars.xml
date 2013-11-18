@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>Wow Characters</name>
+	<author>Thomas Joußen</author>
+	<version>1.0.0</version>
+	<descrition>Displays all Characters from an user</descrition>
+
+	<files>
+		<filename>mod_wowchars.xml</filename>
+		<filename module="mod_wowchars">mod_wowchars.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<folder>sql</folder>
+		<folder>language</folder>
+	</files>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/mysql/updates</schemapath>
+		</schemas>
+	</update>
+</extension>

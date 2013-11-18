@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fields name="profile">
+		<fieldset name="profile" label="PLG_USER_DSG_PROFILE_SLIDER_LABEL">
+			<field
+				name="avatar"
+				type="avatar"
+				default=""
+				label="PLG_USER_DSG_PROFILE_FIELD_AVATAR_LABEL"
+				description="PLG_USER_DSG_PROFILE_FIELD_AVATAR_DESC"
+				size="10"
+			/>
+			<field
+				name="gender"
+				type="list"
+				class="inputbox"
+				label="PLG_USER_DSG_PROFILE_FIELD_GENDER_LABEL"
+				description="PLG_USER_DSG_PROFILE_FIELD_GENDER_DESC"
+				size="1"
+			>
+				<option value="PLG_USER_DSG_PROFILE_MALE">PLG_USER_DSG_PROFILE_MALE</option>
+				<option value="PLG_USER_DSG_PROFILE_FEMALE">PLG_USER_DSG_PROFILE_FEMALE</option>
+			</field>
+			<field
+				name="dob"
+				type="calendar"
+				label="PLG_USER_DSG_PROFILE_FIELD_DOB_LABEL"
+				description="PLG_USER_DSG_PROFILE_FIELD_DOB_DESC"
+				class="date_field"
+			/>
+			<field
+				name="city"
+				type="text"
+				label="PLG_USER_DSG_PROFILE_FIELD_CITY_LABEL"
+				description="PLG_USER_DSG_PROFILE_FIELD_CITY_DESCRIPTION"
+				size="40"
+			/>
+			<field
+				name="facebook"
+				type="url"
+				id="facebook"
+				description="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_DESC"
+				filter="string"
+				label="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_LABEL"
+				message="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_MESSAGE"
+				size="30"
+			/>
+			<field
+				name="signature"
+				type="textarea"
+				description="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_DESC"
+				label="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_LABEL"
+				message="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_MESSAGE"
+				cols="30"
+				rows="5"
+				filter="safehtml"
+			/>
+		</fieldset>
+	</fields>
+</form>

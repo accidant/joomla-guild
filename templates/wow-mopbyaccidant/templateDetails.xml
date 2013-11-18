@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+        version="2.5"
+        type="template"
+        client="site"
+>
+    <name>WoW - MoP By Accidant</name>
+    <creationDate>01/08/13</creationDate>
+    <author>Thomas Joußen</author>
+    <authorEmail>tjoussen@gmx.de</authorEmail>
+    <version>2.5.0</version>
+    <description>TPL_WOW_XML_DESCRIPTION</description>
+    <files>
+        <folder>css</folder>
+        <folder>css/fonts</folder>
+        <folder>images</folder>
+        <folder>html</folder>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+
+    <positions>
+        <position>wow-toolbar</position>
+        <position>wow-nav</position>
+        <position>wow-right</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+    </positions>
+</extension>

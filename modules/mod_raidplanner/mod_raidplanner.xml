@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="2.5.0" method="upgrade">
+	<name>Wow Raidplanner</name>
+	<author>Thomas Joußen</author>
+	<version>1.0.0</version>
+	<description>Zeigt die neusten 10 Raids eines Benutzers an</description>
+
+	<files>
+		<filename>mod_raidplanner.xml</filename>
+		<filename module="mod_raidplanner">mod_raidplanner.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+</extension>

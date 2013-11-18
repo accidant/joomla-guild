@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="2.5" type="plugin" group="user">
+	<name>PLG_USER_DSGPROFILE</name>
+	<author>Thomas Joußen</author>
+	<creationDate>Oktober 2013</creationDate>
+	<authorEmail>info@der-schmale-grat.de</authorEmail>
+	<version>2.5.0</version>
+	<description>PLG_USER_DSG_PROFILE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="dsgprofile">dsgprofile.php</filename>
+		<folder>profiles</folder>
+		<folder>fields</folder>
+	</files>
+	<languages>
+		<language tag="de-DE">de-DE.plg_user_dsgprofile.ini</language>
+		<language tag="de-DE">de-DE.plg_user_dsgprofile.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+				<field name="register-require_gender" type="list"
+					   description="PLG_USER_DSG_PROFILE_FIELD_GENDER_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_GENDER_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="register-require_dob" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_DOB_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_DOB_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="register-require_city" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_CITY_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_CITY_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="register-require_facebook" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="register-require_signature" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="register-require_avatar" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_AVATAR_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_AVATAR_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+
+				<field name="spacer1" type="spacer"
+					   hr="true"
+				/>
+				<field name="profile-require-user" type="spacer" class="text"
+					   label="PLG_USER_DSG_PROFILE_FIELD_NAME_PROFILE_REQUIRE_USER"
+				/>
+
+
+				<field name="profile-require_gender" type="list"
+					   description="PLG_USER_DSG_PROFILE_FIELD_GENDER_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_GENDER_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="profile-require_dob" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_DOB_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_DOB_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="profile-require_city" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_CITY_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_CITY_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="profile-require_facebook" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_FACEBOOK_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="profile-require_signature" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_DESC"
+						   label="PLG_USER_DSG_PROFILE_FIELD_SIGNATURE_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field name="profile-require_avatar" type="list"
+
+					   description="PLG_USER_DSG_PROFILE_FIELD_AVATAR_DESC"
+					   label="PLG_USER_DSG_PROFILE_FIELD_AVATAR_LABEL"
+						>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

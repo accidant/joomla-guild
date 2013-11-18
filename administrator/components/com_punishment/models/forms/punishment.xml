@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset>
+		<field name="id" type="hidden" />
+		<field
+			name="title"
+			type="text"
+			label="COM_PUNISHMENT_PUNISHMENT_TITLE_LABEL"
+			description="COM_PUNISHMENT_PUNISHMENT_TITLE_DESC"
+			size="40"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="threshold"
+			type="number"
+			label="COM_PUNISHMENT_PUNISHMENT_TRESHOLD_LABEL"
+			description="COM_PUNISHMENT_PUNISHMENT_THRESHOLD_DESC"
+			class="inputbox"
+			default="0"
+		/>
+		<field
+			name="duration"
+			type="number"
+			label="COM_PUNISHMENT_PUNISHMENT_DURATION_LABEL"
+			description="COM_PUNISHMENT_PUNISHMENT_DURATION_DESC"
+			class="inputbox"
+			default="0"
+		/>
+
+	</fieldset>
+</form>

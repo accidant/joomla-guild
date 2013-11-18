@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset>
+		<field name="id" type="hidden" />
+		<field
+				name="title"
+				type="text"
+				label="COM_PUNISHMENT_VIOLATION_TITLE_LABEL"
+				description="COM_PUNISHMENT_VIOLATION_TITLE_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="points"
+				type="number"
+				label="COM_PUNISHMENT_VIOLATION_POINTS_LABEL"
+				description="COM_PUNISHMENT_VIOLATION_POINTS_DESC"
+				class="inputbox"
+				default="0"
+				/>
+	</fieldset>
+</form>

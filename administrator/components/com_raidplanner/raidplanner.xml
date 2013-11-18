@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>COM_RAIDPLANNER</name>
+	<creationDate>September 2013</creationDate>
+	<author>Thomas Joußen</author>
+	<authorUrl>http://der-schmale-grat.de</authorUrl>
+	<copyright>Der schmale Grat © 2013</copyright>
+	<version>1.0.0</version>
+	<description>COM_RAIDPLANNER_DESC</description>
+
+	<scriptfile>script.php</scriptfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>raidplanner.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>controllers</folder>
+		<folder>language</folder>
+		<folder>helpers</folder>
+	</files>
+
+	<media destination="com_raidplanner" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</media>
+
+	<administration>
+		<menu img="">COM_RAIDPLANNER_MENU</menu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>raidplanner.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="de-DE">language/de-DE/de-DE.com_raidplanner.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_raidplanner.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

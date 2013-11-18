@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="2.5" type="plugin" group="dsg">
+	<name>PLG_DSG_LATESTPOSTS</name>
+	<author>Thomas Joußen</author>
+	<creationDate>Oktober 2013</creationDate>
+	<authorEmail>info@der-schmale-grat.de</authorEmail>
+	<version>1.0.0</version>
+	<description>PLG_DSG_LATESTPOSTS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="latestposts">latestposts.php</filename>
+		<filename>kunena.php</filename>
+	</files>
+	<languages>
+		<language tag="de-DE">de-DE.plg_dsg_latestposts.ini</language>
+		<language tag="de-DE">de-DE.plg_dsg_latestposts.sys.ini</language>
+	</languages>
+</extension>

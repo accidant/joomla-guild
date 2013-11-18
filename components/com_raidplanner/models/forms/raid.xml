@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset>
+		<field name="id" type="hidden" />
+		<field
+			name="name"
+			type="text"
+			label="COM_RAIDPLANNER_RAID_NAME_LABEL"
+			description="COM_RAIDPLANNER_RAID_NAME_DESC"
+			size="48"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="date"
+			type="calendar"
+			default="NOW"
+			label="COM_RAIDPLANNER_RAID_DATE_LABEL"
+			description="COM_RAIDPLANNER_RAID_DATE_DESC"
+			format="%d.%m.%Y"
+			class="date_field"
+			/>
+
+		<field
+			name="start_time"
+			type="time"
+			label="COM_RAIDPLANNER_RAID_START_TIME_LABEL"
+			description="COM_RAIDPLANNER_RAID_START_TIME_DESC"
+		/>
+		<field
+			name="end_time"
+			type="time"
+			label="COM_RAIDPLANNER_RAID_END_TIME_LABEL"
+			description="COM_RAIDPLANNER_END_TIME_DESC"
+          />
+		<field
+			name="size"
+			type="list"
+			label="COM_RAIDPLANNER_RAID_SIZE_LABEL"
+			description="COM_RAIDPLANNER_RAID_SIZE_DESC"
+		>
+			<option value="0">COM_RAIDPLANNER_RAID_SIZE_0</option>
+			<option value="5">COM_RAIDPLANNER_RAID_SIZE_5</option>
+			<option value="10">COM_RAIDPLANNER_RAID_SIZE_10</option>
+			<option value="25">COM_RAIDPLANNER_RAID_SIZE_25</option>
+			<option value="40">COM_RAIDPLANNER_RAID_SIZE_40</option>
+		</field>
+		<field
+			name="raid_type"
+			type="list"
+			label="COM_RAIDPLANNER_RAID_TYPE_LABEL"
+			description="COM_RAIDPLANNER_RAID_TYPE_DESC"
+			onchange="
+			if($(this).find('option:selected').val() != 'raid'){
+				$('#jform_raid').attr('disabled', 'disabled').parent().hide();
+			}else{
+				$('#jform_raid').removeAttr('disabled').parent().show()
+			}"
+		>
+			<option value="raid">COM_RAIDPLANNER_RAID_TYPE_RAID</option>
+			<option value="cm">COM_RAIDPLANNER_RAID_TYPE_CM</option>
+			<option value="meeting">COM_RAIDPLANNER_RAID_TYPE_MEETING</option>
+			<option value="dungeon">COM_RAIDPLANNER_RAID_TYPE_DUNGEON</option>
+			<option value="pvp">COM_RAIDPLANNER_RAID_TYPE_PVP</option>
+			<option value="other">COM_RAIDPLANNER_RAID_TYPE_OTHER</option>
+		</field>
+		<field
+			name="raid"
+			type="list"
+			label="COM_RAIDPLANNER_RAID_LABEL"
+			description="COM_RAIDPLANNER_RAID_DESC"
+		>
+			<option value="">Bitte wählen</option>
+			<option value="soo">COM_RAIDPLANNER_RAID_SOO</option>
+			<option value="tot">COM_RAIDPLANNER_RAID_TOT</option>
+			<option value="tes">COM_RAIDPLANNER_RAID_TES</option>
+			<option value="hf">COM_RAIDPLANNER_RAID_HF</option>
+			<option value="mv">COM_RAIDPLANNER_RAID_MV</option>
+			<option value="ds">COM_RAIDPLANNER_RAID_DS</option>
+			<option value="fl">COM_RAIDPLANNER_RAID_FL</option>
+			<option value="tfw">COM_RAIDPLANNER_RAID_TFW</option>
+			<option value="bd">COM_RAIDPLANNER_RAID_BD</option>
+			<option value="bot">COM_RAIDPLANNER_RAID_BOT</option>
+			<option value="bh">COM_RAIDPLANNER_RAID_BH</option>
+			<option value="rs">COM_RAIDPLANNER_RAID_RS</option>
+			<option value="icc">COM_RAIDPLANNER_RAID_ICC</option>
+			<option value="ony">COM_RAIDPLANNER_RAID_ONY</option>
+			<option value="toc">COM_RAIDPLANNER_RAID_TOC</option>
+			<option value="uld">COM_RAIDPLANNER_RAID_ULD</option>
+			<option value="eoe">COM_RAIDPLANNER_RAID_EYO</option>
+			<option value="voa">COM_RAIDPLANNER_RAID_VOA</option>
+			<option value="os">COM_RAIDPLANNER_RAID_OS</option>
+			<option value="nax">COM_RAIDPLANNER_RAID_NAX</option>
+			<option value="sp">COM_RAIDPLANNER_RAID_SP</option>
+			<option value="bt">COM_RAIDPLANNER_RAID_BT</option>
+			<option value="mh">COM_RAIDPLANNER_RAID_MH</option>
+			<option value="tk">COM_RAIDPLANNER_RAID_TK</option>
+			<option value="ssc">COM_RAIDPLANNER_RAID_SSC</option>
+			<option value="mag">COM_RAIDPLANNER_RAID_MAG</option>
+			<option value="gru">COM_RAIDPLANNER_RAID_GRU</option>
+			<option value="kar">COM_RAIDPLANNER_RAID_KAR</option>
+			<option value="aq40">COM_RAIDPLANNER_RAID_AQ40</option>
+			<option value="aq10">COM_RAIDPLANNER_RAID_AQ10</option>
+			<option value="bwl">COM_RAIDPLANNER_RAID_BWL</option>
+			<option value="mc">COM_RAIDPLANNER_RAID_MC</option>
+		</field>
+		<field
+			name="description"
+			type="textarea"
+			label="COM_RAIDPLANNER_RAID_DESCRIPTION_LABEL"
+			description="COM_RAIDPLANNER_RAID_DESCRIPTION_DESC"
+			default=""
+		/>
+		<field
+			name="char_id"
+			type="chars"
+			label="COM_RAIDPLANNER_RAID_CHARS_LABEL"
+			description="COM_RAIDPLANNER_RAID_CHARS_DESC"
+		/>
+	</fieldset>
+</form>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="2.5" type="plugin" group="kunena" method="upgrade">
+	<name>plg_kunena_dsg</name>
+	<verion>1.0.0</verion>
+	<creationDate>2013-09-26</creationDate>
+	<author>Thomas Joußen</author>
+	<authorEmail>tjoussen@gmx.de</authorEmail>
+	<description>PLG_KUNENA_DSG</description>
+	<files>
+		<filename plugin="dsg">dsg.php</filename>
+		<filename>avatar.php</filename>
+		<filename>profile.php</filename>
+		<folder>language</folder>
+	</files>
+</extension>

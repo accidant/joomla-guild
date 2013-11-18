@@ -1,0 +1,341 @@
+.hidden {
+    display: none !important;
+    visibility: hidden;
+	height:0 !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/*---- WoW Boss Module - Pandaria Edition - 5.1 - Joomla 2.5 ----*/
+
+.wowboss-wrapper{
+	margin:auto;
+	max-width:400px;
+}
+
+.wowboss-wrapper.wbwon{
+	padding:5px;
+	border-radius:10px;
+}
+
+	.wbwon.wbshadow{
+		box-shadow:0 0 5px rgba(0,0,0,0.4);
+	}
+	
+.wowboss-wrapper.wbwon .wowboss{
+	border-radius:5px;
+	overflow:hidden;
+}	
+
+.wowbosspandaria{
+	background:#353535 !important;
+	color:#fff !important;
+	font-size:13px;
+	position:relative;
+	padding:0 0 10px 0;
+	overflow-x:hidden;
+}
+
+.wowbosspandaria h4{
+	border:none !important;
+	color:#fff !important;
+	margin:0 !important;
+	text-shadow:2px 2px 2px #000 !important;
+	font-size:1.3em !important;
+	padding:20px 46px 20px 46px !important;
+	background-image:url('../images/arrow-right.png') !important;
+	background-repeat:no-repeat !important;
+	background-position:14px 50% !important;
+	position:relative !important;
+	z-index:999;
+	cursor:pointer !important;
+	font-weight:normal !important;
+	text-transform:none !important;
+}
+
+.wowbosspandaria .wboss-box.active h4,
+.wowbosspandaria h4:hover{
+	background-image:url('../images/arrow-bottom.png') !important;
+}
+
+.wowbosspandaria .wboss-box.active h4:hover{
+	background-image:url('../images/arrow-right.png') !important;
+}
+
+.wowbosspandaria header{
+	background-repeat:no-repeat;
+	background-position:left top;
+	position:relative;
+}
+
+.wowbosspandaria header .headerok{
+	position:absolute;
+	top:0;
+	bottom:0;
+	z-index:998;
+	content:" ";
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+.wowbosspandaria header.noprogress .headerok{
+	width:100%;
+}
+
+.wowbosspandaria header:after{
+	content:" ";
+	left:0;
+	right:0;
+	bottom:0;
+	height:1px;
+	background:rgba(0,0,0,0.7);
+	position:absolute;
+	z-index:1000;
+}
+
+.wowbosspandaria .wboss-box{
+	position:relative;
+}
+
+.wowbosspandaria .wboss-box:after{
+	content:" ";
+	left:0;
+	right:0;
+	bottom:-1px;
+	height:1px;
+	background:rgba(255,255,255,0.1);
+	position:absolute;
+	z-index:1000;
+}
+
+.wowbosspandaria ul{
+	margin:0 !important;
+	padding:0 !important;
+	list-style:none !important;
+	background-image:url('../images/stripes.png');
+	position:relative;
+	overflow:hidden;
+	max-height:0em;
+	-moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+	display:block !important;
+}
+
+.wowbosspandaria .wboss-box.active ul,
+.wowbosspandaria .wboss-box.hoverable:hover ul{
+	max-height:800px;
+}
+
+.wowbosspandaria ul:before{
+	content:" ";
+	left:0;
+	right:0;
+	height:1px;
+	top:0;
+	background:rgba(255,255,255,0.1);
+	position:absolute;
+	z-index:1000;
+	width:100%;
+}
+
+.wowbosspandaria ul:after{
+	content:" ";
+	left:0;
+	right:0;
+	bottom:0;
+	height:1px;
+	background:rgba(0,0,0,0.7);
+	position:absolute;
+	z-index:1000;
+	width:100%;
+}
+
+.wowbosspandaria ul li{
+	padding:0.8em 50px 0.8em 20px !important;
+	background-image:none !important;
+	position:relative;
+	margin:0 !important;
+}
+
+.wowbosspandaria ul li.even{
+	background-color:rgba(0,0,0,0.1);
+}
+
+.wowbosspandaria ul li:after{
+	content:" ";
+	background-position:right;
+	background-repeat:no-repeat;
+	top:0;
+	bottom:0;
+	width:36px;
+	right:12px;
+	position:absolute;
+	background-image:url('../images/undefeated.png');
+}
+
+.wowbosspandaria ul li.wboss-defeated:after{
+	background-image:url('../images/defeated.png');
+}
+
+.wowbosspandaria ul li.wboss-defeated-hero:after{
+	background-image:url('../images/defeated-hero.png');
+}
+
+.wowbosspandaria .wboss-defeated{
+	color:#5eb600;
+	font-weight:bold;
+}
+
+.wowbosspandaria .wboss-defeated.wboss-defeated-hero{
+	color:#00d6ff;
+	font-weight:bold;
+}
+
+.wowbosspandaria .wb-progress{
+	background-color:#cacaca;
+	width:100%;
+	position:relative;
+	height:2px;
+	z-index:1000;
+	bottom:1px;
+}
+
+.wowbosspandaria header.noprogress .wb-progress{
+	background-color:#cacaca;
+	width:100%;
+	position:relative;
+	height:2px;
+	z-index:1000;
+	bottom:1px;
+	display:none;
+}
+
+.wowbosspandaria .wb-progress .wb-ok{
+	position:absolute;
+	background-color:#5eb600;
+	height:2px;
+	top:0;
+	bottom:0;
+	z-index:1001;
+}
+
+.wowbosspandaria .wb-progress .wb-okhero{
+	position:absolute;
+	background-color:#00d6ff;
+	height:2px;
+	top:0;
+	bottom:0;
+	z-index:1002;
+}
+
+.wowbosspandaria .wboss-raidtitle span:after{
+	position:absolute;
+	content:" ";
+	width:26px;
+	right:14px;
+	top:0;
+	bottom:0;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.wowbosspandaria .wboss-raidtitle span.ten:after{
+	background-image:url('../images/10.png');
+}
+
+.wowbosspandaria .wboss-raidtitle span.twentyfive:after{
+	background-image:url('../images/25.png');
+}
+
+.wowbosspandaria .wboss-raidtitle span.flexible:after{
+	background-image:url('../images/flexible.png');
+}
+
+/* Heart of Fire */
+
+.wowbosspandaria .hof header{
+	background-image:url('../images/raids/hof.jpg');
+}
+
+.wowbosspandaria .hof header .headerok{
+	background-image:url('../images/raids/hof-ok.jpg');
+}
+
+.wowbosspandaria .hof ul{
+	background-color:#513769;
+}
+
+/* Mogu'shan Vaults */
+
+.wowbosspandaria .mogushan header{
+	background-image:url('../images/raids/mogushan.jpg');
+}
+
+.wowbosspandaria .mogushan header .headerok{
+	background-image:url('../images/raids/mogushan-ok.jpg');
+}
+
+.wowbosspandaria .mogushan ul{
+	background-color:#3d668c;
+}
+
+/* Terrace of Endless Spring */
+
+.wowbosspandaria .terrace header{
+	background-image:url('../images/raids/terrace.jpg');
+}
+
+.wowbosspandaria .terrace header .headerok{
+	background-image:url('../images/raids/terrace-ok.jpg');
+}
+
+.wowbosspandaria .terrace ul{
+	background-color:#95537f;
+}
+
+/* Throne of Thunder */
+
+.wowbosspandaria .tot header{
+	background-image:url('../images/raids/tot.jpg');
+}
+
+.wowbosspandaria .tot header .headerok{
+	background-image:url('../images/raids/tot-ok.jpg');
+}
+
+.wowbosspandaria .tot ul{
+	background-color:#2b2a52;
+}
+
+/* Throne of Thunder */
+
+.wowbosspandaria .orgrimmar header{
+	background-image:url('../images/raids/orgrimmar.jpg');
+}
+
+.wowbosspandaria .orgrimmar header .headerok{
+	background-image:url('../images/raids/orgrimmar-ok.jpg');
+}
+
+.wowbosspandaria .orgrimmar ul{
+	background-color:#5e2020;
+}

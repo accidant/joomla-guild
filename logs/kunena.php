@@ -1,0 +1,71 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2013-10-01 11:55:37 UTC
+#Software: Joomla Platform 11.4.0 Stable [ Brian Kernighan ] 03-Jan-2012 00:00 GMT
+
+#Fields: date	time	priority	clientip	category	message
+2013-10-01	11:55:37	INFO	192.168.1.83	-	FinderIndexerAdapter::getTypeId
+2013-10-01	11:55:37	INFO	192.168.1.83	-	FinderIndexerAdapter::getTypeId
+2013-10-01	11:55:37	INFO	192.168.1.83	-	FinderIndexerAdapter::getTypeId
+2013-10-01	11:55:37	INFO	192.168.1.83	-	FinderIndexerAdapter::getTypeId
+2013-10-01	11:55:37	INFO	192.168.1.83	-	FinderIndexerAdapter::getTypeId
+2013-10-04	19:27:35	INFO	37.24.149.97	-	FinderIndexerAdapter::getTypeId
+2013-10-04	19:27:36	INFO	37.24.149.97	-	FinderIndexerAdapter::getTypeId
+2013-10-04	19:27:36	INFO	37.24.149.97	-	FinderIndexerAdapter::getTypeId
+2013-10-04	19:27:36	INFO	37.24.149.97	-	FinderIndexerAdapter::getTypeId
+2013-10-04	19:27:36	INFO	37.24.149.97	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:42	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:42	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:42	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:42	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:42	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:43	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:43	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:43	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:43	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:43	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:44	INFO	79.205.233.3	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:44	INFO	79.205.233.3	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:44	INFO	79.205.233.3	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:44	INFO	79.205.233.3	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:44	INFO	79.205.233.3	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:47	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:47	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:47	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:47	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:51:47	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:52:39	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:52:39	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:52:39	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:52:39	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:52:39	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:54:55	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:54:55	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:54:55	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:54:55	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:54:55	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:59:28	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:59:28	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:59:28	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:59:28	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	18:59:28	INFO	212.114.235.101	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:33:15	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:33:15	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:33:15	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:33:15	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:33:15	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:42:44	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:42:44	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:42:44	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:42:44	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:42:44	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:44:07	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:44:07	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:44:07	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:44:07	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-10-17	19:44:07	INFO	95.91.246.150	-	FinderIndexerAdapter::getTypeId
+2013-11-03	23:35:56	INFO	88.64.222.151	-	FinderIndexerAdapter::getTypeId
+2013-11-03	23:35:56	INFO	88.64.222.151	-	FinderIndexerAdapter::getTypeId
+2013-11-03	23:35:57	INFO	88.64.222.151	-	FinderIndexerAdapter::getTypeId
+2013-11-03	23:35:57	INFO	88.64.222.151	-	FinderIndexerAdapter::getTypeId
+2013-11-03	23:35:57	INFO	88.64.222.151	-	FinderIndexerAdapter::getTypeId

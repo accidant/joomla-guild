@@ -1,0 +1,147 @@
+/**
+ * @version SVN: $Id: mod_#module#.php Cmstyles.de $
+ * @package    Klassensuche
+ * @subpackage Base
+ * @copyright    Copyright (C) 2012 Cmstyles.de
+ * http://www.cmstyles.de
+ * Module Cmprogress - Joomla! 2.5
+ * @license  GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+#mod_klassensuche .rolle {
+    display: none;
+    text-decoration: underline;
+}
+#mod_klassensuche {
+    height: auto;
+    width: 100%;
+}
+#warrior {
+    background: url("../images/grunge-halb/warrior-bg.png") no-repeat scroll 0 0 transparent;
+}
+#paladin {
+    background: url("../images/grunge-halb/paladin-bg.png") no-repeat scroll 0 0 transparent;
+}
+#hunter {
+    background: url("../images/grunge-halb/hunter-bg.png") no-repeat scroll 0 0 transparent;
+}
+#rogue {
+    background: url("../images/grunge-halb/rogue-bg.png") no-repeat scroll 0 0 transparent;
+}
+#priest {
+    background: url("../images/grunge-halb/priest-bg.png") no-repeat scroll 0 0 transparent;
+}
+#deathknight {
+    background: url("../images/grunge-halb/deathknight-bg.png") no-repeat scroll 0 0 transparent;
+}
+#shaman {
+    background: url("../images/grunge-halb/shaman-bg.png") no-repeat scroll 0 0 transparent;
+}
+#mage {
+    background: url("../images/grunge-halb/mage-bg.png") no-repeat scroll 0 0 transparent;
+}
+#warlock {
+    background: url("../images/grunge-halb/warlock-bg.png") no-repeat scroll 0 0 transparent;
+}
+#druid {
+    background: url("../images/grunge-halb/druid-bg.png") no-repeat scroll 0 0 transparent;
+}
+#monk {
+    background: url("../images/grunge-halb/monk-bg.png") no-repeat scroll 0 0 transparent;
+}
+#klassensuche_all_wc {
+    background: url("../images/grunge-halb/all-bg.png") no-repeat scroll 0 0 transparent;
+}
+#klassensuche_all_sw {
+    background: url("../images/grunge-halb/sw-tor-all-bg.png") no-repeat scroll 0 0 transparent;
+}
+#jedi_knight {
+    background: url("../images/grunge-halb/sw-tor-jedi-knight-bg.png") no-repeat scroll 0 0 transparent;
+}
+#headhunter {
+    background: url("../images/grunge-halb/sw-tor-headhunter-bg.png") no-repeat scroll 0 0 transparent;
+}
+#sith_warrior {
+    background: url("../images/grunge-halb/sw-tor-sith-warrior-bg.png") no-repeat scroll 0 0 transparent;
+}
+#trooper {
+    background: url("../images/grunge-halb/sw-tor-trooper-bg.png") no-repeat scroll 0 0 transparent;
+}
+#smuggler {
+    background: url("../images/grunge-halb/sw-tor-smuggler-bg.png") no-repeat scroll 0 0 transparent;
+}
+#empire_agent {
+    background: url("../images/grunge-halb/sw-tor-empire-agent-bg.png") no-repeat scroll 0 0 transparent;
+}
+#sith_inquisitor {
+    background: url("../images/grunge-halb/sw-tor-sith_inquisitor-bg.png") no-repeat scroll 0 0 transparent;
+}
+#ambassador{
+    background: url("../images/grunge-halb/sw-tor-ambassador-bg.png") no-repeat scroll 0 0 transparent;
+}
+#trenner {
+    height: 30px;
+    width: 20px;
+}
+#warrior, #paladin, #hunter, #rogue, #priest, #deathknight, #shaman, #mage, #warlock, #druid, #monk, #klassensuche_all_wc, #klassensuche_all_sw, #jedi_knight, #headhunter, #sith_warrior, #trooper, #smuggler, #empire_agent, #sith_inquisitor, #ambassador {
+    height: 50px;
+    width: 168px;
+	overflow:hidden;
+	box-shadow: 0 2px 2px 1px #000000;
+    margin: 0 auto 10px;
+}
+#mod_klassensuche .title {
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: -7px;
+    position: absolute;
+    text-shadow: 1px -1px 1px #000000;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+#mod_klassensuche .clear {
+    clear: both;
+}
+#mod_klassensuche .info {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 10px;
+	max-width: 140px;
+}
+#mod_klassensuche  span {
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+}
+#mod_klassensuche .class img {
+    width: 15px;
+}
+#mod_klassensuche .class {
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-left: 150px;
+    margin-top: 3px;
+    position: absolute;
+    z-index: 2;
+    width: 10px;
+}
+#mod_klassensuche a:link, a:visited {
+    height: 66px;
+    text-decoration: none;
+}
+#klassensuche_copyright {
+    font-size: 9px;
+    background: url(../images/copyright.png) no-repeat;
+    width: 156px;
+    height: 15px;
+    display: block;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:20px;
+	line-height:1em;
+}
+#klassensuche_copyright a:link {
+    font-size: 9px;
+}
+#mod_klassensuche a:link, #mod_klassensuche a:visited {
+    color: #FFFFFF !important;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_raidplanner">
+	<section name="component">
+		<action name="raid.show" title="COM_RAIDPLANNER_SHOW_RAID" description="COM_RAIDPLANNER_SHOW_RAID_DESC" />
+		<action name="core.create" title="COM_RAIDPLANNER_CREATE_RAID" description="COM_RAIDPLANNER_CREATE_RAID_DESC" />
+		<action name="core.edit" title="COM_RAIDPLANNER_EDIT_RAID" description="COM_RAIDPLANNER_EDIT_RAID_DESC" />
+		<action name="raid.delete" title="COM_RAIDPLANNER_DELETE_RAID" description="COM_RAIDPLANNER_DELETE_RAID_DESC" />
+		<action name="invites.changestatus" title="COM_RAIDPLANNER_CHANGE_STATUS" description="COM_RAIDPLANNER_CHANGE_STATUS_DESC" />
+		<action name="invites.administrate" title="COM_RAIDPLANNER_ADMINISTRATE_STATUS" description="COM_RAIDPLANNER_ADMINISTRATE_STATUS_DESC" />
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+	</section>
+</access>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>COM_WOWCHARS</name>
+	<creationDate>September 2013</creationDate>
+	<author>Thomas Joußen</author>
+	<authorEmail>tjoussen@gmx.de</authorEmail>
+	<copyright>Der schmale Grat © 2013</copyright>
+	<version>0.0.3</version>
+
+	<description>Manage the Wow-Characters from an user</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schema>
+			<schemapath type="mysql">sql/update/mysql</schemapath>
+		</schema>
+	</update>
+
+	<files folder="site">
+		<filename>wowchars.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>helpers</folder>
+		<folder>controllers</folder>
+		<folder>language</folder>
+	</files>
+
+	<administration>
+		<menu>COM_WOWCHARS_MENU</menu>
+		<files folder="admin">
+			<filename>wowchars.php</filename>
+			<folder>sql</folder>
+			<folder>language</folder>
+		</files>
+		<language folder="admin">
+			<language tag="de-DE">language/de-DE/de-DE.com_wowchars.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_wowchars.sys.ini</language>
+		</language>
+	</administration>
+</extension>

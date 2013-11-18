@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_punishment">
+	<section name="component">
+		<action name="users.show" title="COM_PUNISHMENT_SHOW_USERS" description="COM_PUNISHMENT_SHOW_USERS_DESC" />
+		<action name="core.create" title="COM_PUNISHMENT_CREATE_DATA" description="COM_PUNISHMENT_CREATE_DATA_DESC" />
+		<action name="core.edit" title="COM_PUNISHMENT_EDIT_DATA" description="COM_PUNISHMENT_EDIT_DATA_DESC" />
+		<action name="userviolation.add" title="COM_PUNISHMENT_DO_REDEMPTION" description="COM_PUNISHMENT_DO_REDEMPTION_DESC" />
+		<action name="userviolation.doRedemption" title="COM_PUNISHMENT_ADD_VIOLATION" description="COM_PUNISHMENT_ADD_VIOLATION_DESC" />
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+	</section>
+</access>
